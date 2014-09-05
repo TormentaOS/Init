@@ -17,6 +17,7 @@ const (
 type Config struct {
 	Path          string
 	ServicesArr   []*Service
+	Timeout       int    `yaml:"timeout"`
 	StartMessage  string `yaml:"start"`
 	StopMessage   string `yaml:"stop"`
 	ServicesField string `yaml:"services"`
@@ -59,7 +60,7 @@ func NewConfigFromFile(path string) (*Config, error) {
 	}
 
 	for _, servicePath := range servicesPaths {
-		service, err := NewServiceFromFile(servicePath)
+		service, err := NewService(servicePath)
 		if err != nil {
 			return nil, err
 		}

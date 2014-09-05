@@ -4,3 +4,7 @@ block: True
 start: [
 "/sbin/gettys -8 38400 tty1"
 ]
+
+stop: [
+ "/bin/kill -9 {{ pid }}"
+]

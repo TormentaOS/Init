@@ -1,6 +1,10 @@
 name: "tty3"
-position: 1
 description: "Starts the getty process on tty1"
+block: true
+timeout: 10
 start: [
-"/sbin/gettys -8 38400 tty1"
+"sleep 100"
+]
+stop: [
+ "/bin/kill -9 {{ pid }}"
 ]
