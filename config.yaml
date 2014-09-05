@@ -1,0 +1,5 @@
+services: ./services/*.yaml
+timeout: 30
+checkfs:
+  - "/dev/sda"
+  - "/dev/sdb"

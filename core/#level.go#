@@ -1,0 +1,13 @@
+package core
+
+type Level struct {
+	id Integer
+	signal Signal
+}
+
+
+func New(level Integer)(*Level, error) {
+	return &Level {
+		
+	}
+}

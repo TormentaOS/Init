@@ -1,0 +1,5 @@
+name: "tty2"
+position: 2
+start: [
+"/sbin/gettys -8 38400 tty1"
+]

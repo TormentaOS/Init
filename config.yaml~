@@ -1,0 +1,4 @@
+services: ./services/*.yaml
+checkfs:
+  - "/dev/sda"
+  - "/dev/sdb"

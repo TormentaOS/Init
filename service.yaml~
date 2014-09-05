@@ -1,0 +1,4 @@
+name: "tty1"
+description: "Starts the getty process on tty1"
+steps:
+  "/sbin/getty -8 38400 tty1"

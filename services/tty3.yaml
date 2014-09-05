@@ -1,0 +1,6 @@
+name: "tty3"
+position: 1
+description: "Starts the getty process on tty1"
+start: [
+"/sbin/gettys -8 38400 tty1"
+]
