@@ -1,6 +1,0 @@
-name: "tty2"
-levels: [ 0, 6 ]
-position: 2
-start: [
-"/sbin/getty -8 38400 tty1"
-]
